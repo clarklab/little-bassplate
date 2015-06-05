@@ -57,7 +57,7 @@
     "css": "cssnext src/base.css css/base.css",
     "minify:css": "cssnext src/base.css -c -o css/base.min.css",
     "watch:css": "watch 'npm run css && npm run minify:css' ./src",
-    "serve": "http-server",
+    "serve": "http-server -p $PORT",
     "start": "npm run watch:css & npm run serve"
   },
   "repository": {
